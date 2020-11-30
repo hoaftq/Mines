@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Mines - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Mines.res" /d "NDEBUG" "C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\Mines.rc"" 
+Creating temporary file "C:\DOCUME~1\QUANGH~1\LOCALS~1\Temp\RSP16C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Mines.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\AfxStd.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesApp.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesDat.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesFrame.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\Number.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\QUANGH~1\LOCALS~1\Temp\RSP16C.tmp" 
+Creating temporary file "C:\DOCUME~1\QUANGH~1\LOCALS~1\Temp\RSP16D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Mines.pdb" /machine:I386 /out:"Release/Mines.exe" 
+".\Release\AfxStd.obj"
+".\Release\MinesApp.obj"
+".\Release\MinesDat.obj"
+".\Release\MinesFrame.obj"
+".\Release\MinesView.obj"
+".\Release\Number.obj"
+".\Release\Mines.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\QUANGH~1\LOCALS~1\Temp\RSP16D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+AfxStd.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\AfxStd.cpp(22) : warning C4101: 'err' : unreferenced local variable
+MinesApp.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\AfxStd.cpp(25) : warning C4715: 'ReadFile' : not all control paths return a value
+MinesDat.cpp
+MinesFrame.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesDat.cpp(16) : warning C4715: 'GetStateValue' : not all control paths return a value
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesFrame.cpp(172) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesFrame.cpp(232) : warning C4018: '==' : signed/unsigned mismatch
+MinesView.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(136) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(141) : warning C4018: '<' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(267) : warning C4018: '==' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(267) : warning C4018: '==' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(326) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\MyProjects\Mines\MinesView.cpp(326) : warning C4018: '>=' : signed/unsigned mismatch
+Number.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Mines.exe - 0 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

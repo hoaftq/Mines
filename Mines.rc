@@ -1,0 +1,297 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON    DISCARDABLE     "Mines.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New &game\tCtrl+N",           ID_FILE_NEW
+        POPUP "&New"
+        BEGIN
+            MENUITEM "&Beginner\tCtrl+B",           ID_FILE_NEW_BEGINNER
+            MENUITEM "&Intermediate\tCtrl+I",       ID_FILE_NEW_INTERMEDIATE
+            MENUITEM "&Expert\tCtrl+E",             ID_FILE_NEW_EXPERT
+            MENUITEM "&Custom\tCtrl+C",             ID_FILE_NEW_CUSTOM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Marks ?",                    ID_FILE_MARKS
+        MENUITEM "Best times",                  ID_FILE_BESTTIME
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Topic",                       ID_HELP_TOPIC
+        MENUITEM "&About    ",                  ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MINESTD             BITMAP  DISCARDABLE     "MineStd.bmp"
+IDB_MINECLK             BITMAP  DISCARDABLE     "MineClk.bmp"
+IDB_NUM1                BITMAP  DISCARDABLE     "Num1.bmp"
+IDB_NUM2                BITMAP  DISCARDABLE     "Num2.bmp"
+IDB_NUM3                BITMAP  DISCARDABLE     "Num3.bmp"
+IDB_NUM4                BITMAP  DISCARDABLE     "Num4.bmp"
+IDB_NUM5                BITMAP  DISCARDABLE     "Num5.bmp"
+IDB_NUM6                BITMAP  DISCARDABLE     "Num6.bmp"
+IDB_NUM7                BITMAP  DISCARDABLE     "Num7.bmp"
+IDB_NUM8                BITMAP  DISCARDABLE     "Num8.bmp"
+IDB_MINEFAULT           BITMAP  DISCARDABLE     "Minefaul.bmp"
+IDB_MINEMASK            BITMAP  DISCARDABLE     "MineMask.bmp"
+IDB_QUESTION            BITMAP  DISCARDABLE     "Question.bmp"
+IDB_WIN                 BITMAP  DISCARDABLE     "Win.bmp"
+IDB_DIE                 BITMAP  DISCARDABLE     "Die.bmp"
+IDB_NORMAL              BITMAP  DISCARDABLE     "Normal.bmp"
+IDB_FORBID              BITMAP  DISCARDABLE     "Forbid.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "B",            ID_FILE_NEW_BEGINNER,   VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_FILE_NEW_CUSTOM,     VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_NEW_EXPERT,     VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_NEW_INTERMEDIATE, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CUSTOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        VERTGUIDE, 24
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_BESTTIMES, DIALOG
+    BEGIN
+        VERTGUIDE, 4
+        VERTGUIDE, 87
+        VERTGUIDE, 148
+        BOTTOMMARGIN, 116
+        HORZGUIDE, 17
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 57
+        HORZGUIDE, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM DIALOG DISCARDABLE  0, 0, 148, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Custom"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_WIDTH,55,16,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,55,38,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINES,55,59,40,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,13,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,84,50,14
+    LTEXT           "Width",IDC_STATIC,18,19,20,8
+    LTEXT           "Height",IDC_STATIC,18,41,22,8
+    LTEXT           "Mines",IDC_STATIC,18,62,20,8
+    LTEXT           "? -> ?",IDC_WIDTHMAX,103,19,31,8
+    LTEXT           "? -> ?",IDC_HEIGHTMAX,104,41,30,8
+    LTEXT           "",IDC_MINEMAX,103,62,38,8
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 135, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Mines"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,133,50,14
+    LTEXT           "Game Mines",IDC_STATIC,55,21,51,10
+    LTEXT           "Write by:",IDC_STATIC,9,39,92,8
+    LTEXT           "Date:",IDC_STATIC,10,99,92,10
+    ICON            IDI_MAINFRAME,IDC_STATIC,25,13,21,20
+    LTEXT           "Automatic control 1",IDC_STATIC,21,62,107,9
+    LTEXT           "Static",IDC_DATE,30,110,76,17
+    LTEXT           "Trac Quang Hoa",IDC_STATIC,19,52,54,8
+    LTEXT           "Electrical Engineering Department",IDC_STATIC,20,72,108,
+                    8
+    LTEXT           "Ha Noi University Of Technology",IDC_STATIC,20,82,104,8
+END
+
+IDD_BESTTIMES DIALOG DISCARDABLE  0, 0, 186, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Best times"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEW_NAME,4,82,67,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Apply",IDC_APPLY,73,102,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,134,102,50,14
+    LTEXT           "Mode",IDC_NEW_MODE,87,84,52,8,WS_DISABLED
+    LTEXT           "Best time",IDC_NEW_TIME,147,84,30,8,WS_DISABLED
+    LTEXT           "Name:",IDC_STATIC,3,6,22,8,SS_CENTERIMAGE
+    LTEXT           "-",IDC_NAME_BEGINNER,3,18,66,8
+    LTEXT           "-",IDC_NAME_INTERMEDIATE,3,33,67,8
+    LTEXT           "-",IDC_NAME_EXPERT,3,47,65,8
+    LTEXT           "-",IDC_NAME_CUSTOM,4,61,65,8
+    LTEXT           "Mode:",IDC_STATIC,87,6,21,8
+    LTEXT           "Beginner",IDC_STATIC,87,19,29,8
+    LTEXT           "Intermediate",IDC_STATIC,87,33,40,8
+    LTEXT           "Expert",IDC_STATIC,87,47,21,8
+    LTEXT           "Custom",IDC_MODE_CUSTOM,87,61,51,8
+    LTEXT           "Best time:",IDC_STATIC,147,7,32,8
+    LTEXT           "-",IDC_TIME_BEGINNER,148,19,31,8
+    LTEXT           "-",IDC_TIME_INTERMEDIATE,148,34,35,8
+    LTEXT           "-",IDC_TIME_EXPERT,148,47,34,8
+    LTEXT           "-",IDC_TIME_CUSTOM,148,62,35,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "THBT - Cam Binh - Cam Xuyen - Ha Tinh\0"
+            VALUE "FileDescription", "Game Mines\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Mines\0"
+            VALUE "LegalCopyright", "Copyright © Trac Quang Hoa 4-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Mines.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mines\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
